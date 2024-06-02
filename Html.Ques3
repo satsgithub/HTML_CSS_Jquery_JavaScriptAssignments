@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Armed Forces</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1280px-Flag_of_India.svg.png');
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000;
+          
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        dt {
+            font-weight: bold;
+        }
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Indian Armed Forces</h1>
+
+    <h2>Indian Armed Forces</h2>
+    <ul>
+        <li>Indian Air Force</li>
+        <li>Indian Army</li>
+        <li>Indian Navy</li>
+    </ul>
+
+    <h2>Rank Structure of Indian Army</h2>
+    <ol>
+        <li>Field Marshal</li>
+        <li>General</li>
+        <li>Lieutenant General</li>
+        <li>Major General</li>
+        <li>Brigadier</li>
+        <li>Colonel</li>
+        <li>Lieutenant Colonel</li>
+        <li>Major</li>
+        <li>Captain</li>
+        <li>Lieutenant</li>
+    </ol>
+
+    <h2>Indian Armed Forces Overview</h2>
+    <dl>
+        <dt>Indian Air Force</dt>
+        <dd>The Indian Air Force (IAF) is the air arm of the Indian Armed Forces.</dd>
+        <dt>Indian Army</dt>
+        <dd>The Indian Army is the land-based branch and the largest component of the Indian Armed Forces(the best btw!) </dd>
+        <dt>Indian Navy</dt>
+        <dd>The Indian Navy is the naval branch of the Indian Armed Forces and is responsible for safeguarding the nation's maritime borders.</dd>
+    </dl>
+</div>
+
+</body>
+</html>
