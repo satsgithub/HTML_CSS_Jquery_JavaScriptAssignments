@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box; /* Ensure padding is included in total width */
+            overflow-y: auto; /* Allow scrolling if the content is too tall */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #333; /* Adding color for better visibility */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333; /* Adding color for better visibility */
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensure padding is included in total width */
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: pink; /* Change button color to pink */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff69b4; /* Change hover color if needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Registration</h1>
+    <form action="/submit_registration" method="post">
+        <label for="employeeName">Employee Name</label>
+        <input type="text" id="employeeName" name="employeeName" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+       
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department" required>
+
+        <label for="position">Position</label>
+        <input type="text" id="position" name="position" required>
+
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate" name="startDate" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
