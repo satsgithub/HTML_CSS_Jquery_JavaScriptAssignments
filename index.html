@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayDateTime() {
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const now = new Date();
+            const day = now.getDate();
+            const month = now.getMonth() + 1;
+            const year = now.getFullYear();
+            const hour = now.getHours();
+            const minute = now.getMinutes();
+            const second = now.getSeconds();
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+            const formattedDate = `${padZero(month)}-${padZero(day)}-${year}`;
+            const timeString = `Today is : ${formattedDate}.<br>Current time is : ${hour} ${ampm} : ${padZero(minute)} : ${padZero(second)}`;
+            
+            document.getElementById('dateTime').innerHTML = timeString;
+        }
+
+        function padZero(num) {
+            return (num < 10 ? '0' : '') + num;
+        }
+
+        window.onload = displayDateTime;
+
+        setInterval(displayDateTime, 1000);
+
+        function printPage() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chandigarh University</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our Chandigarh University, who wanna come here even!</p>
+            <p id="dateTime"></p>
+            <button onclick="printPage()">Print this page</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Chandigarh University. All rights reserved.</p>
+    </footer>
+</body>
+</html>
