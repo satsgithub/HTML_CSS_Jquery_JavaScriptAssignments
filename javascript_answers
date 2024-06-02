@@ -1,3 +1,126 @@
-javascript asnwer 4 and onwards
+javascript asnwer 4 to 11
 ==============================================================================================================================================================================================================
 ==============================================================================================================================================================================================================
+
+
+function calculateTriangleArea(side1, side2, side3) {
+    const s = (side1 + side2 + side3) / 2;
+    const area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+    return area;
+}
+
+const side1 = 10;
+const side2 = 10;
+const side3 = 10;
+
+const area = calculateTriangleArea(side1, side2, side3);
+console.log("Area of the triangle:", area);
+
+==============================================================================================================================================================================================================
+==============================================================================================================================================================================================================
+
+//Rotate a string
+
+function rotateString(str) {
+    return str[str.length - 1] + str.substring(0, str.length - 1);
+}
+
+
+let str = 'w3resource';
+setInterval(() => {
+    str = rotateString(str);
+    console.log(str);
+}, 1000); 
+
+
+// Check for Leap Year
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+
+let year = 2024;
+console.log(isLeapYear(year)); 
+
+
+// Multiplication and Division of Two Numbers
+let num1 = 95;
+let num2 = 5;
+
+console.log("Multiplication:", num1 * num2);
+console.log("Division:", num1 / num2);
+
+
+// Temperature Conversion
+function celsiusToFahrenheit(celsius) {
+    return celsius * 9 / 5 + 32;
+}
+
+function fahrenheitToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5 / 9;
+}
+
+
+let celsiusTemp = 60;
+console.log(celsiusToFahrenheit(celsiusTemp)); 
+let fahrenheitTemp = 172;
+console.log(fahrenheitToCelsius(fahrenheitTemp)); 
+
+// Get Website URL
+let currentURL;
+if (typeof window !== 'undefined') {
+    // Browser environment
+    currentURL = window.location.href;
+} else if (typeof process !== 'undefined' && process.argv.length > 1) {
+    // Node.js environment
+    currentURL = process.argv[1];
+} else {
+    // Default value
+    currentURL = 'Unknown';
+}
+
+console.log("Current URL:", currentURL);
+
+
+// Reverse a Number
+function reverseNumber(num) {
+    return parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num);
+}
+
+let number = 54789;
+console.log(reverseNumber(number)); 
+
+
+// Generate Combinations of a String
+function getAllCombinations(str) {
+    let combinations = [];
+    for (let i = 0; i < str.length; i++) {
+        for (let j = i + 1; j <= str.length; j++) {
+            combinations.push(str.slice(i, j));
+        }
+    }
+    return combinations;
+}
+
+let inputString = 'satya';
+console.log(getAllCombinations(inputString));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
